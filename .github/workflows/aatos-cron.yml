@@ -1,0 +1,52 @@
+name: Aatos Daily Optimization Report
+
+# Defines the triggers for this GitHub Actions workflow
+on:
+  schedule:
+    # Executes daily at 12:30 UTC.
+    # This corresponds to 14:30 EET (Finnish Winter Time) or 15:30 EEST (Finnish Summer Time).
+    # Spot electricity prices for the following day are typically published by 14:00 EET.
+    - cron: '30 12 * * *'
+  
+  # Enables manual triggering of the workflow via the GitHub Actions UI
+  workflow_dispatch: 
+
+jobs:
+  execute-aatos-bot:
+    # Specifies the virtual environment / OS for the runner
+    runs-on: ubuntu-latest 
+    
+    steps:
+      - name: Checkout Repository
+        # Retrieves the source code from the repository so the workflow can access it
+        uses: actions/checkout@v4
+      
+      - name: Set up Python Environment
+        # Installs and configures the specified Python version for consistency
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install Dependencies
+        # Upgrades pip and installs all required Python packages from requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          
+      - name: Construct AI Prompt File
+        # Securely injects the prompt template from GitHub Secrets into a local file.
+        # This "Bring Your Own Prompt" approach ensures the prompt remains private 
+        # while allowing the application to read it natively without code modifications.
+        run: |
+          cat << 'EOF' > prompt.txt
+          ${{ secrets.AATOS_PROMPT }}
+          EOF
+          
+      - name: Execute Main Application
+        # Runs the core Python script with necessary API keys and tokens 
+        # securely injected as environment variables.
+        env: 
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python main.py
