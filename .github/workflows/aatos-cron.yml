@@ -3,10 +3,10 @@ name: Aatos Daily Optimization Report
 # Defines the triggers for this GitHub Actions workflow
 on:
   schedule:
-    # Executes daily at 12:18 UTC.
-    # This corresponds to 14:18 EET (Finnish Winter Time) or 15:18 EEST (Finnish Summer Time).
+    # Executes daily at 12:11 UTC.
+    # This corresponds to 14:11 EET (Finnish Winter Time) or 15:11 EEST (Finnish Summer Time).
     # Spot electricity prices for the following day are typically published by 14:00 EET.
-    - cron: '18 12 * * *'
+    - cron: '11 12 * * *'
   
   # Enables manual triggering of the workflow via the GitHub Actions UI
   workflow_dispatch: 
