@@ -1,11 +1,11 @@
-# Aatos - AI-Powered Electricity Price Bot
+# AI-Powered Electricity Price Bot
 
 Aatos is a lightweight, autonomous Python application designed to optimize daily electricity consumption. The project solves a practical everyday problem by fetching raw spot electricity prices, processing the time-series data, and utilizing a Large Language Model (LLM) to generate a personalized, human-readable optimization report delivered directly to a mobile device.
 
 I made this AI-powered automation bot because I wanted to get daily, AI-analyzed spot electricity prices delivered straight to my phone, completely eliminating the hassle of manually checking different apps. This project demonstrates practical skills in REST API integration, data manipulation, prompt engineering, and automated notifications.
 
 ## Tech Stack
-- **Core language:** Python 3
+- **Core language:** Python
 - **Data processing:** pandas (timezone conversions, time-series filtering, data formatting)
 - **AI integration:** Google GenAI SDK / Gemini 2.5 Flash (prompt engineering, text generation)
 - **API communication:** requests (fetching JSON data from public APIs)
@@ -20,14 +20,14 @@ I made this AI-powered automation bot because I wanted to get daily, AI-analyzed
 
 ---
 
-# Aatos – Tekoälypohjainen sähkönhintabotti
+# Tekoälypohjainen sähkönhintabotti
 
 Aatos on kevyt ja autonominen Python-sovellus, joka on suunniteltu optimoimaan päivittäistä sähkönkulutusta. Projekti ratkaisee käytännön ongelman hakemalla pörssisähkön raakadatan, käsittelemällä aikasarjatiedon ja hyödyntämällä LLM:ää luodakseen personoidun, selkokielisen sähkön käytön optimointiraportin suoraan puhelimeen.
 
 Tein tämän tekoälyavusteisen automaatiobotin, koska halusin saada päivittäiset pörssisähkön hinnat valmiiksi analysoituna suoraan puhelimeeni täysin automaattisesti ja ilman minkäänlaista ylimääräistä säätöä. Tämä projekti demonstroi osaamista REST API -integraatioissa, datan käsittelyssä, prompt engineeringissä sekä automaattisissa ilmoituksissa.
 
 ## Teknologiat
-- **Pääkieli:** Python 3
+- **Pääohjelma:** Python
 - **Datan käsittely:** pandas (aikavyöhykkeiden muunnokset, aikasarjojen suodatus, formatointi)
 - **Tekoäly:** Google GenAI SDK / Gemini 2.5 Flash (promptien hallinta, tekstin generointi)
 - **API-liikenne:** requests (JSON-datan hakeminen julkisista rajapinnoista)
