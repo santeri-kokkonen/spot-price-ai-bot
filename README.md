@@ -1,6 +1,6 @@
 # AI-Powered Electricity Price Bot
 
-Aatos is a lightweight, autonomous Python application designed to optimize daily electricity consumption. The project solves a practical everyday problem by fetching raw spot electricity prices, processing the time-series data, and utilizing a Large Language Model (LLM) to generate a personalized, human-readable optimization report delivered directly to a mobile device.
+Lightweight, autonomous Python application designed to optimize daily electricity consumption. The project solves a practical everyday problem by fetching raw spot electricity prices, processing the time-series data, and utilizing a Large Language Model (LLM) to generate a personalized, human-readable optimization report delivered directly to a mobile device.
 
 I made this AI-powered automation bot because I wanted to get daily, AI-analyzed spot electricity prices delivered straight to my phone, completely eliminating the hassle of manually checking different apps. This project demonstrates practical skills in REST API integration, data manipulation, prompt engineering, and automated notifications.
 
@@ -22,7 +22,7 @@ I made this AI-powered automation bot because I wanted to get daily, AI-analyzed
 
 # Tekoälypohjainen sähkönhintabotti
 
-Aatos on kevyt ja autonominen Python-sovellus, joka on suunniteltu optimoimaan päivittäistä sähkönkulutusta. Projekti ratkaisee käytännön ongelman hakemalla pörssisähkön raakadatan, käsittelemällä aikasarjatiedon ja hyödyntämällä LLM:ää luodakseen personoidun, selkokielisen sähkön käytön optimointiraportin suoraan puhelimeen.
+Kevyt ja autonominen Python-sovellus, joka on suunniteltu optimoimaan päivittäistä sähkönkulutusta. Projekti ratkaisee käytännön ongelman hakemalla pörssisähkön raakadatan, käsittelemällä aikasarjatiedon ja hyödyntämällä LLM:ää luodakseen personoidun, selkokielisen sähkön käytön optimointiraportin suoraan puhelimeen.
 
 Tein tämän tekoälyavusteisen automaatiobotin, koska halusin saada päivittäiset pörssisähkön hinnat valmiiksi analysoituna suoraan puhelimeeni täysin automaattisesti ja ilman minkäänlaista ylimääräistä säätöä. Tämä projekti demonstroi osaamista REST API -integraatioissa, datan käsittelyssä, prompt engineeringissä sekä automaattisissa ilmoituksissa.
 
