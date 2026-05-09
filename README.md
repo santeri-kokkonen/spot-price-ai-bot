@@ -17,25 +17,3 @@ I made this AI-powered automation bot because I wanted to get daily, AI-analyzed
 2. **Environment Variables:** Create a `.env` file in the root with your credentials (`GEMINI_API_KEY`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`).
 3. **Configure AI:** Create a `prompt.txt` file containing the AI instructions. Make sure to include the `{ai_data}` placeholder for the dataset.
 4. **Execute:** Run `python main.py` to trigger the pipeline.
-
----
-
-# Tekoälypohjainen sähkönhintabotti
-
-Kevyt ja autonominen Python-sovellus, joka on suunniteltu optimoimaan päivittäistä sähkönkulutusta. Projekti ratkaisee käytännön ongelman hakemalla pörssisähkön raakadatan, käsittelemällä aikasarjatiedon ja hyödyntämällä LLM:ää luodakseen personoidun, selkokielisen sähkön käytön optimointiraportin suoraan puhelimeen.
-
-Tein tämän tekoälyavusteisen automaatiobotin, koska halusin saada päivittäiset pörssisähkön hinnat valmiiksi analysoituna suoraan puhelimeeni täysin automaattisesti ja ilman minkäänlaista ylimääräistä säätöä. Tämä projekti demonstroi osaamista REST API -integraatioissa, datan käsittelyssä, prompt engineeringissä sekä automaattisissa ilmoituksissa.
-
-## Teknologiat
-- **Pääohjelma:** Python
-- **Datan käsittely:** pandas (aikavyöhykkeiden muunnokset, aikasarjojen suodatus, formatointi)
-- **Tekoäly:** Google GenAI SDK / Gemini 2.5 Flash (promptien hallinta, tekstin generointi)
-- **API-liikenne:** requests (JSON-datan hakeminen julkisista rajapinnoista)
-- **Ilmoitukset:** Telegram Bot API (automaattinen viestien välitys)
-- **Konfiguraatio:** python-dotenv (ympäristömuuttujien turvallinen hallinta)
-
-## Pikaohje
-1. **Kloonaa ja asenna:** Aja `git clone`, luo virtuaaliympäristö ja suorita `pip install -r requirements.txt`.
-2. **Ympäristömuuttujat:** Luo juurikansioon `.env`-tiedosto ja lisää avaimesi (`GEMINI_API_KEY`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`).
-3. **Tekoälyn asetukset:** Luo `prompt.txt`-tiedosto, johon kirjoitat tekoälyn ohjeet (sisällytä `{ai_data}`-paikkamerkki datalle).
-4. **Suorita:** Käynnistä ohjelma komennolla `python main.py`.
